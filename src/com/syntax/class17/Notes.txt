@@ -1,0 +1,10 @@
+Types of variables
+
+There are 3 types of variables
+    local
+    instance
+    static
+
+Local - declared inside the method
+Instance - declared inside the class but outside the method
+Static -
