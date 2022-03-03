@@ -1,10 +1,7 @@
-package com.syntax.class16;
-public class Task05A {
-    public static void main(String[] args) {
-        Task05A task = new Task05A();
-        System.out.println(task.isPalindrome("aba"));
-        System.out.println(task.isPalindrome("abc"));
-    }
+package com.syntax.class18;
+
+public class Task02 {
+
     public String reverse(String inputString) {
         StringBuilder str = new StringBuilder(inputString);
         str.reverse();
@@ -13,5 +10,10 @@ public class Task05A {
     public boolean isPalindrome(String inputString) {
         String reversedStr = reverse(inputString);
         return reversedStr.equals(inputString);
+    }
+
+    public static void main(String[] args) {
+        Task02 obj = new Task02();
+        System.out.println(obj.isPalindrome("racecar"));
     }
 }
