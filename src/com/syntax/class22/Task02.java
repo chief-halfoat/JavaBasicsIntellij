@@ -1,4 +1,5 @@
 package com.syntax.class22;
+
 //Create a class named 'Programming'.
 // While creating an object of the class, if nothing is passed to it,
 // then the message "I love programming languages" should be printed.
@@ -9,21 +10,31 @@ package com.syntax.class22;
 public class Task02 {
 }
 
-class Programming{
+class Programming {
 
-    String input="programming languages";
-    Programming(){}
-    Programming(String input){
-        this.input=input;
+    String input = "programming languages";
+
+    Programming() {
+        System.out.println("I love programming languages");
     }
-    void output(){
-        System.out.println("I love "+input);
+
+    Programming(String input) {
+        System.out.println("I love " + input);
     }
 }
 
-class Test{
+class Test {
     public static void main(String[] args) {
 
-    new Programming().output();
-    new Programming("Java").output();
-}}
+        new Programming();
+        new Programming("Java");
+        main("John");
+    }
+
+    public static void main(String args) {
+
+        new Programming();
+        new Programming("Java");
+
+    }
+}
