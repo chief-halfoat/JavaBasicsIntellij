@@ -1,5 +1,7 @@
 package com.syntax.class23;
 
+import com.syntax.class24.Employee;
+
 //Create a class CreditCard and define variable balance and interest. Create an instance method that will calculate interest based on the given balance.
 //Create 2 subclasses: Visa and AX. In AX class override method calculate interest.
 //Call the method by creating an object of each of the three classes.
@@ -37,6 +39,22 @@ class AX extends CreditCard{
     @Override
     void calcInt(){
         System.out.println("This is overridden");
+    }
+}
+
+class InterfaceTest implements Employee {
+
+    @Override
+    public void work() {
+        System.out.println("Printing in a different package");
+    }
+
+    public static void main(String[] args) {
+        InterfaceTest interfaceTest=new InterfaceTest();
+        interfaceTest.work();
+        System.out.println(interfaceTest.age);
+        new InterfaceTest().work();
+        System.out.println(InterfaceTest.age);
     }
 }
 
