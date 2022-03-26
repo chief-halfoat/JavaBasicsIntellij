@@ -20,6 +20,7 @@ public class CollectionsDemo2 {
         countries.add(3, "Pakistan");
         System.out.println(countries);
         System.out.println(countries.size());
+        
 
 
     }
