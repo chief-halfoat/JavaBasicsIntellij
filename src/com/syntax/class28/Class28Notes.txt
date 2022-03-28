@@ -1,0 +1,12 @@
+Class 28
+
+ArrayList vs LinkedList
+
+1)We can store the duplicate values in Lists
+2)Insertion order is maintained
+
+When to use ArrayList
+1) if most of the operations are reading and storing new data and not shifting or changing position of the data then we should go with ArrayList
+
+When to use LinkedList
+1) When most of the operations are related to changing the position of the data or related to data shifting
