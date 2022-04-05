@@ -1,0 +1,16 @@
+Set in Java
+    Set is an interface of collections framework which is implemented by many classes, including:
+    HashSet, LinkedHashSet, TreeHashSet
+
+Properties of Set
+    All Sets do not allow duplicates
+
+HashSet
+    doesn't maintain insertion order
+    fastest of all sets
+    most widely used
+LinkedHashSet
+    maintains insertion order
+    slower than HashSet but faster than TreeSet (especially insertions)
+TreeSet
+

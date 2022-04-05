@@ -1,4 +1,4 @@
-package com.syntax.review04;
+package com.syntax.reviews.review04;
 
 public class Practice4 {
 

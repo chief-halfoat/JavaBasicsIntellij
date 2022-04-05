@@ -17,7 +17,7 @@ public class IteratorDemo4 {
         System.out.println(courses);
         Iterator<String> iterator = courses.iterator();
         while (iterator.hasNext()){
-            if(iterator.next().equals("Java")){
+            if(iterator.next().equals("Selenium")){
                 iterator.remove();
             }
         }

@@ -1,6 +1,4 @@
-package com.syntax.review04;
-
-import java.util.Locale;
+package com.syntax.reviews.review04;
 
 public class Practice5 {
 

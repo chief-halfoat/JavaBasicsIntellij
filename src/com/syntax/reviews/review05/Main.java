@@ -1,4 +1,4 @@
-package com.syntax.review05;
+package com.syntax.reviews.review05;
 
 public class Main {
 
