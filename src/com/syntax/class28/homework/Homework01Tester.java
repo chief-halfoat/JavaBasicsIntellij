@@ -27,8 +27,9 @@ public class Homework01Tester {
 
         Iterator<Insurance> iterator = insurances.iterator();
         while(iterator.hasNext()){
-            iterator.next().getQuote();
-            iterator.next().cancelInsurance();
+            Insurance i = iterator.next();
+            i.getQuote();
+            i.cancelInsurance();
         }
 
     }
