@@ -1,0 +1,27 @@
+Maps in Java
+    Data structure that allows us to store key value pairs
+    Searching is different
+    We can use any types of keys, not restricted to integer-based natural indices
+
+There are many maps, but the four for us are:
+HashMap
+LinkedHashMap
+TreeMap
+HashTable (old)
+
+HashMap:
+    fastest at inserting and retrieving data
+    no insertion order is maintained
+LinkedHashMap
+    maintains insertion order
+    insertion speed is the same as HashMap
+    Retrieval is slowest
+TreeMap
+    data is sorted based on natural order by default
+    insertion is slowest
+HashTable
+    older format
+    only useful for multi-threading
+    threadsafe data means it can handle multiple insertions and retrievals at the same time
+        from multiple CPUs but because of thread safety feature, it is also very slow
+        so if you are sure you will not be writing multithreaded codes, do not use it
