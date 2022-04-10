@@ -1,0 +1,8 @@
+FileHandling in Java:
+Reading and writing data to files is called file handling
+Things we need to read/write data to files:
+    path
+    navigate to the location (FileInputStream for reading and FileOutputStream for writing
+    a specific class that knows how to read/write data:
+        XSSFWorkbook for Excel
+        .properties for Properties

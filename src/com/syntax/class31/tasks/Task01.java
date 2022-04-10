@@ -4,6 +4,7 @@ package com.syntax.class31.tasks;
 //url=https://facebook.com
 //username
 //password
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -19,5 +20,10 @@ public class Task01 {
         properties.put("username","admin");
         properties.put("password","password1");
         properties.store(fileOutputStream,"added info");
+
+        FileInputStream fileInputStream = new FileInputStream((path));
+        properties.load(fileInputStream);
+        System.out.println(properties.get("username"));
+        System.out.println(properties.get("password"));
     }
 }
