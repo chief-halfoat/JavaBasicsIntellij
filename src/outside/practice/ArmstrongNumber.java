@@ -6,8 +6,21 @@ package outside.practice;
 public class ArmstrongNumber {
     public static void main(String[] args) {
 
-    }
-   public static void isArmstrong(int n){
+        System.out.println(isArmstrong(123));
+        System.out.println(isArmstrong(153));
 
+    }
+   public static boolean isArmstrong(int n){
+        int pop, sum=0, orig=n;
+        while (n!=0){
+            pop=n%10;
+            n/=10;
+            sum= (int) (sum+(Math.pow(pop,3)));
+        }
+        if(orig==sum){
+            return true;
+        } else {
+            return false;
+        }
    }
 }
