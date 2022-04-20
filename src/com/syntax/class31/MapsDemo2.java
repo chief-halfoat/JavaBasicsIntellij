@@ -3,6 +3,7 @@ package com.syntax.class31;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Vector;
 
 //data structure nesting
 public class MapsDemo2 {
@@ -21,5 +22,7 @@ public class MapsDemo2 {
         healthFoods.put("Vegetables",vegetables);
         healthFoods.put("Fruit",fruit);
         System.out.println(healthFoods);
+
+        System.out.println(healthFoods.values());
     }
 }

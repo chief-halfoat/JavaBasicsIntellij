@@ -17,6 +17,8 @@ public class ExcelDemo2 {
         System.out.println(xlsx.getSheetIndex("Sheet1"));
         System.out.println(sheet.getRow(0).getCell(0));
 
+        fileInputStream.close();
+
 
     }
 }
