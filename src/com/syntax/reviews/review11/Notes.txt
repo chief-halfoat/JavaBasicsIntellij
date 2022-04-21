@@ -1,0 +1,36 @@
+Lists should be use when we have to store single elements as a collection
+1)they maintain the insertion order
+2)They allow us to store duplicate elements
+3)dynamic in size
+4)data is stored based on indices
+
+2 famous classes that implement List are:
+ArrayList
+LinkedList
+
+ArrayList
+    when most of the operations are storing new data or reading data, not being manipulated
+
+LinkedList
+    when most of the operations are storing new data in-between or at the start of the list
+
+Sets
+    store single values
+    do not allow duplicates
+    there are tons of sets, but 3 important ones for us:
+        HashSet
+        LinkedHashSet
+        TreeSet
+
+HashSet
+    most used
+    fastest for insertion and retrieval
+LinkedHashSet
+    maintains insertion order
+    insertion is slower than hash, faster than TreeSet
+    retrieval is slowest
+TreeSet
+    sorts the data in natural order
+    insertion speed is slowest
+    retrieval is faster than LinkedHashSet but slower than HashSet
+
