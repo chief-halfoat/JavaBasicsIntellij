@@ -33,20 +33,38 @@ public class Repl219 {
     query.add("john");
     query.add("dan");
 
-//        System.out.println(countOnlyPrefixes(names,query));
+        System.out.println(countOnlyPrefixes(names,query));
 }
 
 
-//    public static Map<String,Integer> countOnlyPrefixes(List<String> names, List<String> query){
-//        List<Integer> counts = new ArrayList<>();
-//        Map<String, Integer> count = new LinkedHashMap<>();
-//        for(int i=0; i<query.size();i++){
-//            for(int j=0; j<names.size();j++){
-//                if(names.get(j).length()>query.get(i).length()&&names.get(j).contains(query.get(i))){
-//                    count.put(query.get(i),count.get(query.get(i))+1);
-//                }
-//            }
-//        }
-//        return count;
-//    }
+    public static List<Integer> countOnlyPrefixes(List<String> names, List<String> query){
+        List<Integer> counts = new ArrayList<>();
+        //creating a map to store the query list and a tally
+        Map<String, Integer> count = new LinkedHashMap<>();
+        //putting the query list into the map and giving all names an initial count of 0
+        for(String quer:query){
+            count.put(quer,0);
+        }
+        //looping through the keySet, which is now made of the queryNames
+        for(String queryName:count.keySet()){
+            //looping through the nameList
+            for(int i=0;i< names.size();i++){
+                //comparing the name to the query name
+                //per the prompt, the name does not count if the prefix is the name straight up,
+                //so first check is if the name is longer than the queryName
+                //then we check if the name contains the queryName
+                if(names.get(i).length()>queryName.length()&&names.get(i).contains(queryName)){
+                    //if both conditions are met, we are incrementing the count, now the keyValue, by 1
+                    count.put(queryName,count.get(queryName)+1);
+                }
+            }
+        }
+        //looping through the map using the entrySet
+        for(Map.Entry<String,Integer> entry:count.entrySet()){
+            //taking the values and adding them to a List
+            counts.add(entry.getValue());
+        }
+        //returning the List
+        return counts;
+    }
 }
