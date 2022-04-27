@@ -19,7 +19,6 @@ public class LongestCommonPrefix14 {
         String out = "";
 
 
-
         return out;
     }
 
