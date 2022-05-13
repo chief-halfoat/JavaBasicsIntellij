@@ -53,7 +53,7 @@ public class AddTwoNumbers02 {
             }
         }
         int sum1 = n1+n2;
-        while(sum1>-0){
+        while(sum1>0){
             int n =sum1%10;
             sum.add(n);
             sum1/=10;

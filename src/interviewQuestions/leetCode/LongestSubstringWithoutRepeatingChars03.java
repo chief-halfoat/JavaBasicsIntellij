@@ -19,7 +19,8 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 public class LongestSubstringWithoutRepeatingChars03 {
 
     public int lengthOfLongestSubstring(String s) {
-        int a = 0;
-        return a;
+        int length = 0;
+
+        return length;
     }
 }
