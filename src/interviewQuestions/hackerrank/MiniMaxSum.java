@@ -1,8 +1,6 @@
 package interviewQuestions.hackerrank;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class MiniMaxSum {
     public static void main(String[] args) {
@@ -41,6 +39,7 @@ public class MiniMaxSum {
         //numbers) and sum-sml(which is now the smallest number in the array and will give the sum of the four bigger
         //numbers
         System.out.print((sum - lar) + " " + (sum - sml));
+
     }
     }
 
