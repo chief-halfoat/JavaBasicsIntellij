@@ -56,11 +56,12 @@ public class ReverseInteger07 {
             rev = 0;
         } else {
             while (x != 0) {
-//                rev += x % 10;
-//                rev *= 10;
                 rev = rev*10+(x%10);
                 if (x == 0) {
                     rev /= 10;
+                }
+                if (x > Integer.MAX_VALUE || x < Integer.MIN_VALUE) {
+                    rev = 0;
                 }
                 x /= 10;
             }

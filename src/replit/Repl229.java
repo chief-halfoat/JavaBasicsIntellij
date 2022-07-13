@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Repl229 {
+    public static void main(String[] args) {
+        countMaxChar("abcaaaabdddd");
+    }
     public static int countMaxChar(String str){
 
         char[] arr = str.toCharArray();
